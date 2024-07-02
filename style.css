@@ -6,7 +6,7 @@ html, body {
 
 body {
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 1fr 4fr / 1fr 4.5fr;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,6 +26,13 @@ input {
     border: none;
     border-radius: 15px;
     height: 28px;
+}
+
+.account {
+    display: grid;
+    grid: 1fr / 0.2fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
 .announcement {
@@ -109,7 +116,7 @@ input {
     grid-column: 2 / 3;
     background-color: #E2E8F0ff;
     display: grid;
-    grid: 1.5fr 1fr / 2.5fr 1fr;
+    grid: 0.8fr 1fr / 2.5fr 1fr;
     gap: 20px;
 }
 
@@ -187,6 +194,10 @@ input {
     filter: invert(100%);
 }
 
+.title {
+    color: gray;
+}
+
 .top {
     display: grid;
     grid-template: 0.1fr / 2fr 1fr;
@@ -222,4 +233,18 @@ input {
 .trending {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    padding-right: 20px;
+}
+
+.trend-container {
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr;
+    border-radius: 7px;
+    padding: 5px 15px 0px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user {
+    display: grid;
+    grid: 20px 1fr / 1fr;
 }
